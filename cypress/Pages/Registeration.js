@@ -10,7 +10,7 @@ class Registeration{
     // click on allow cookies if exists
     clickOnCookies(){
         cy.get('body').then(($body) => {
-            if ($body.find('#cc-allow-01').length > 0) {
+            if ($body.find(Registeration.COOKIE_BUTTON).length > 0) {
               cy.get(Registeration.COOKIE_BUTTON).click({ force: true });
             } else {
               cy.log('Cookie consent button not found. Skipping...');
@@ -25,7 +25,7 @@ class Registeration{
     
     // fill the required info
     setInfo(email, companyWebsite) {
-        const iframe=cy.get(Registeration.IFRAME).its('0.contentDocument.body').should('be.visible').then(cy.wrap).within(() => {
+        cy.get(Registeration.IFRAME).its('0.contentDocument.body').should('be.visible').then(cy.wrap).within(() => {
             // Interact with the email field
             cy.get(Registeration.EMAIL_INPUT).type(email);
       

@@ -56,10 +56,10 @@ describe('E2E Testing for the Website', function () {
     // assert on customer email
     appBuilder.assertFirstCustomerEmail(this.data.customerEmail);
     
-    // edit first customer name
+    // click on customer info
     appBuilder.clickOnCustomerInfo();
     
-    //click on customer info
+    //click on edit
     customerInfo.clickOnEdit();
     
     //change customer first name
