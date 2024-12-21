@@ -20,7 +20,7 @@ describe('E2E Testing for the Website', function () {
     cy.visit('/');
   })
   
-  it('User Registration and Shopping Scenario', function () {
+  it('Edit customer first name', function () {
 
     // Ensure the correct website URL
     cy.url().should('eq', 'https://www.helloagain.com/en/');
