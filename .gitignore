@@ -396,3 +396,12 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Ignore Cypress support folder
+cypress/support/
+
+# Ignore Cypress reports folder
+cypress/reports/
+
+# Ignore Cypress video folder
+cypress/videos/
