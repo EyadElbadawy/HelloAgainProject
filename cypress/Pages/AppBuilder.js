@@ -1,7 +1,7 @@
 class AppBuilder{
     static APP_BUILDER = '.rounded-3xl > .absolute';
-    static CONTINUE_BUTTON = '.modal-footer > .primary';
-    static Dashboard_BUTTON = '.modal-footer > .secondary';
+    static CONTINUE_BUTTON = '.footer-wrapper > .primary';
+    static Dashboard_BUTTON = '.footer-wrapper > .secondary';
     static CUSTOMERS_TAB = ':nth-child(4) > .treeview-container > .header-contacts';
     static CUSTOMERS_Button = 'a[href="#/users"]';
     static FIRST_CUSTOMER_EMAIL = 'tbody > :nth-child(1) > :nth-child(5)';
